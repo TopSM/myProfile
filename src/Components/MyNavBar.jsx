@@ -50,7 +50,7 @@ function MyNavBar({color,setColor, experienceCard, setExperienceCard}) {
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav >
+          <Nav>
             <NavDropdown title="My Resume" id='resumeDropdown' >
               <NavDropdown.Item 
                 onClick={()=> handleNavBarClick("/","WorkExperience")}
@@ -76,6 +76,11 @@ function MyNavBar({color,setColor, experienceCard, setExperienceCard}) {
             <Nav.Link  
               onClick={() => navigate("/mypoems")}>
               Poem Of The Day
+            </Nav.Link>
+            
+            <Nav.Link  
+              onClick={() => navigate("/movielist")}>
+              Movies seen
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
